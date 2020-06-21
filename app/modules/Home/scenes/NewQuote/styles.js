@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
         lineHeight: normalize(21 + 3),
         color: color.white,
         letterSpacing: .5,
-        fontFamily: fontFamily.medium
     },
 
     button:{

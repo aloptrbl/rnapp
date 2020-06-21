@@ -2,39 +2,39 @@ import * as t from './actionTypes';
 
 let initialState = {
     isLoading: false,
-    quotes: []
+    logactivity: []
 };
 
-const profileReducer = (state = initialState, action) => {
+const searchReducer = (state = initialState, action) => {
     switch (action.type) {
-        case t.LOADING_QUOTES: {
-            const quotes = state.quotes;
+        case t.LOADING_LOGACTIVITY: {
+            const logactivity = state.logactivity;
 
             //show loading signal
-            if (quotes.length === 0) return {...state, isLoading: true}
+            if (logactivity.length === 0) return {...state, isLoading: true}
 
             return state;
         }
 
-        case t.QUOTES_AVAILABLE: {
+        case t.LOGACTIVITY_AVAILABLE: {
             let { data } = action;
-            let quotes = [];
+            let logactivity = [];
 
             //convert the snapshot (json object) to array
             data.forEach(function (childSnapshot) {
                 const item = childSnapshot.val();
                 item.key = childSnapshot.key;
 
-                quotes.push(item);
+                logactivity.push(item);
             });
 
-            quotes.reverse();
+            logactivity.reverse();
 
-            return {...state, quotes, isLoading: false};
+            return {...state, logactivity, isLoading: false};
         }
 
         case t.LOGGED_OUT: {
-            return {...state, quotes: []};
+            return {...state, logactivity: []};
         }
 
         default:
@@ -42,4 +42,4 @@ const profileReducer = (state = initialState, action) => {
     }
 };
 
-export default profileReducer;
+export default searchReducer;

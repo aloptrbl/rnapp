@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
 
     buttonText:{
         fontSize: fontSize.regular + 2,
-        fontFamily: fontFamily.medium
     },
 
     forgotText:{
@@ -47,7 +46,6 @@ const styles = StyleSheet.create({
         color:color.black,
         marginBottom: padding,
         fontSize: fontSize.regular,
-        fontFamily: fontFamily.medium,
     }
 });
 

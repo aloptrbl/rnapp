@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "450856839257",
+    "firebase_url": "https://doris-41694.firebaseio.com",
+    "project_id": "doris-41694",
+    "storage_bucket": "doris-41694.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450856839257:android:915640f93938a8090f6948",
+        "android_client_info": {
+          "package_name": "com.example.dorris"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450856839257-9fqr86nf2hml85f1n0v789k4k2vo5852.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dorris",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "450856839257-pfl8vjbrlvrjggqrsu6atedb810pcq9t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dorris",
+            "certificate_hash": "05249cff8eec0c965c5be69a81c48a50f6962965"
+          }
+        },
+        {
+          "client_id": "450856839257-85vsd4rv4fjoklllm8liivtgktu55lm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNMfQQHn7x8fTJbEuUdmb9YMxtLvJwy1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450856839257-85vsd4rv4fjoklllm8liivtgktu55lm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

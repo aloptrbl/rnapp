@@ -17,8 +17,8 @@ export function addQuote(quote, callback) {
         .catch((error) => callback(false, null, error));
 }
 
-export function getQuotes(callback) {
-    const quotesRef = database.ref('users');
+export function getLogActivity(callback) {
+    const quotesRef = database.ref('log_activity');
 
     //start listening for new data
     quotesRef.on('value', function(snapshot) {
@@ -38,12 +38,11 @@ export function updateQuote(quote, callback) {
         .catch((error) => callback(false, null, error));
 }
 
-export function deleteQuote(quote, callback) {
-    const { id, userId } = quote;
+export function deleteLogActivity(quote, callback) {
+    const {key} = quote;
 
     let updates = {};
-    updates['quotes/' + id] = null;
-    updates['/user-quotes/' + userId + '/' + id] = null;
+    updates['log_activity/' + key] = null;
 
     database.ref().update(updates)
         .then(() => callback(true, quote, null))

@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
         width: windowWidth - 40,
         height: normalize(65),
         fontSize: fontSize.regular + 2,
-        fontFamily: fontFamily.bold,
         borderBottomColor: "#A5A7A9"
     }
 });

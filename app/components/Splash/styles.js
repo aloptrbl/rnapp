@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
     title: {
         fontSize:fontSize.large + 5,
         lineHeight:fontSize.large + 7,
-        fontFamily: fontFamily.medium,
         color: "#FF553F",
         letterSpacing: 1
     },

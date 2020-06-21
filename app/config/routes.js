@@ -33,9 +33,9 @@ const TabIcon = ({ focused, tintColor, title }) => {
          const iconName = `ios-home${focused ? '' : ''}`;
           return <Ionicons name={iconName} size={25} style={{color: focused ? '#4267B2' :'black'}} />;
        }
-   else if (title === 'Search')
+   else if (title === 'Log Activity')
    {
-     const iconName = `ios-search${focused ? '' : ''}`;
+     const iconName = `ios-key${focused ? '' : ''}`;
       return <Ionicons name={iconName} size={25} style={{color: focused ? '#4267B2' :'black'}} />;
    }
    else if (title === 'Profile')
@@ -128,14 +128,14 @@ export default class extends React.Component {
                 </Stack>
               </Scene>
 
-              <Scene key="Search" title="Search" icon={TabIcon}>
+              <Scene key="Search" title="Log Activity" icon={TabIcon}>
                 <Stack key="root">
                   <Scene
                     key="Search"
                     hideNavBar
                     component={Search}
                     type={ActionConst.REPLACE}
-                    title="Search"
+                    title="Log Activity"
                   />
                 </Stack>
               </Scene>

@@ -19,11 +19,7 @@ const fontSize = {
 }
 
 const fontFamily = {
-    extrabold: "RobotoExtraBold",
-    bold: "RobotoBold",
-    medium: "RobotoMedium",
-    regular: "RobotoRegular",
-    light: "RobotoLight"
+
 }
 
 const padding = 8;

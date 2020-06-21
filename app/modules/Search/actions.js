@@ -12,11 +12,11 @@ export function addQuote(quote, successCB, errorCB) {
 }
 
 // Get Quotes - READ (R)
-export function getQuotes(errorCB) {
+export function getLogActivity(errorCB) {
     return (dispatch) => {
-        dispatch({type: t.LOADING_QUOTES});
-        api.getQuotes(function (success, data, error) {
-            if (success) dispatch({type: t.QUOTES_AVAILABLE, data});
+        dispatch({type: t.LOADING_LOGACTIVITY});
+        api.getLogActivity(function (success, data, error) {
+            if (success) dispatch({type: t.LOGACTIVITY_AVAILABLE, data});
             else if (error) errorCB(error)
         });
     };
@@ -33,9 +33,9 @@ export function updateQuote(quote, successCB, errorCB) {
 }
 
 // Delete Quote - DELETE (D)
-export function deleteQuote(quote, errorCB) {
+export function deleteLogActivity(quote, errorCB) {
     return (dispatch) => {
-        api.deleteQuote(quote, function (success, data, error) {
+        api.deleteLogActivity(quote, function (success, data, error) {
             if (error) errorCB(error)
         });
     };

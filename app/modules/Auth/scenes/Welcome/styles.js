@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
     title:{
         fontSize: fontSize.large + 2,
         lineHeight: fontSize.large + 4,
-        fontFamily: fontFamily.bold,
         color:color.white,
         letterSpacing: 1
     },
@@ -79,7 +78,6 @@ const styles = StyleSheet.create({
 
     buttonText:{
         fontSize: fontSize.regular + 2,
-        fontFamily: fontFamily.medium
     },
 
     bottom:{
@@ -91,7 +89,6 @@ const styles = StyleSheet.create({
 
     bottomText:{
         fontSize: fontSize.regular,
-        fontFamily: fontFamily.medium,
         marginRight: 5,
         color: "#414141"
     },
@@ -99,7 +96,6 @@ const styles = StyleSheet.create({
     signInText:{
         fontSize: fontSize.regular,
         color: "#FF553F",
-        fontFamily: fontFamily.medium
     },
 
     orContainer:{
@@ -120,7 +116,6 @@ const styles = StyleSheet.create({
     orText:{
         backgroundColor: color.white,
         fontSize: fontSize.regular,
-        fontFamily: fontFamily.medium,
         color: "#414141",
         paddingHorizontal: padding
     }
